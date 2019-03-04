@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="337dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/rad4_50d8c0_top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/tv_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center|start"
+            android:text="本次考试共20题"
+            android:textColor="#FDFDFC"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#FDFDFC"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="已答:5题"
+            />
+
+        <TextView
+            android:id="@+id/tv_nodone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FDFDFC"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="未答:15题"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/rad4__ffffff_bottom"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="108dp"
+                android:layout_height="37dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_marginBottom="30dp"
+                android:text="关闭"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rad19_50d8c0"/>
+
+            <Button
+                android:id="@+id/btn_jiaojuan"
+                android:layout_width="108dp"
+                android:layout_height="37dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:text="交卷"
+                android:background="@drawable/rad19_50d8c0"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

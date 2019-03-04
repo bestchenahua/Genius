@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_bar_bg50d8c0" />
+
+    <ImageView
+        android:layout_width="258dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="39dp"
+        android:src="@drawable/bg5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="二年级拼音讲解测试(一)"
+        android:textColor="#333333"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#AAAAAA"
+        android:textSize="12sp"
+        android:text="考试时长：45分钟"/>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:text="满分：100分"
+                android:drawablePadding="1dp"
+                android:drawableLeft="@drawable/ic15"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="14dp"
+            android:background="#f2f2f2"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:text="及格：80分"
+                android:drawablePadding="1dp"
+                android:drawableLeft="@drawable/ic14"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="314dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rad2_50d8c0"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:text="开始测试"/>
+</LinearLayout>

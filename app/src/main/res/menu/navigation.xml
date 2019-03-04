@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_selector"
+        android:title="选课" />
+
+    <item
+        android:id="@+id/navigation_circle"
+        android:icon="@drawable/ic_circle_selector"
+        android:title="商城" />
+
+    <item
+        android:id="@+id/navigation_nearby"
+        android:icon="@drawable/ic_nearby_selector"
+        android:title="私信" />
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@drawable/ic_mine_selector"
+        android:title="我的" />
+</menu>
