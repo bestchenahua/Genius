@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="65dp"
     android:background="#50d8c0"
+    android:elevation="3dp"
     >
 
     <LinearLayout
@@ -42,6 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text=""
+            android:gravity="center"
             android:singleLine="true"
             android:maxLines="1"
             android:ellipsize="end"

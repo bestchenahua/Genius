@@ -1,4 +1,4 @@
-package cqdz.com.genius.home.view;
+package cqdz.com.genius.home.shangcheng.view;
 
 import android.content.Context;
 import android.graphics.Color;

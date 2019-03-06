@@ -16,6 +16,7 @@ import java.util.List;
 import butterknife.BindView;
 import cqdz.com.genius.R;
 import cqdz.com.genius.home.view.TabShangChengFm;
+import cqdz.com.genius.home.view.TabWoDeFm;
 import cqdz.com.genius.home.view.TabXuanKeFm;
 import cqdz.com.genius.mvpInterface.BindEventBus;
 import cqdz.com.genius.mvpInterface.MvpBaseActivity;
@@ -53,6 +54,9 @@ public class HomeActivity extends MvpBaseActivity {
                     case R.id.navigation_circle:
                         switchFragment(1);
                         break;
+                    case R.id.navigation_mine:
+                        switchFragment(2);
+                        break;
 //                    case R.id.navigation_nearby:
 //                        if(messageEvent==null)
 //                        {
@@ -74,6 +78,7 @@ public class HomeActivity extends MvpBaseActivity {
         fragments = new ArrayList<>();
         fragments.add(new TabXuanKeFm());
         fragments.add(new TabShangChengFm());
+        fragments.add(new TabWoDeFm());
 
 //        fragments.add(new TabCircleFm());
 //        fragments.add(new TabNearbyStore());

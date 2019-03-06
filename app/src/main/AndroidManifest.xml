@@ -11,6 +11,10 @@
         android:supportsRtl="true"
         android:networkSecurityConfig="@xml/network_security_config"
         android:theme="@style/AppTheme">
+        <!--裁剪回调-->
+        <activity android:name="com.linchaolong.android.imagepicker.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,6 +35,24 @@
         <activity android:name=".home.xuanke.view.TiKuTest1Activity" />
         <activity android:name=".home.xuanke.view.TiKuTest2Activity" />
         <activity android:name=".home.xuanke.view.TestEvaluateActivity" />
+        <activity android:name=".home.shangcheng.view.CommodityDetailsActivity" />
+        <activity android:name=".home.shangcheng.view.ShopActivity" />
+        <activity android:name=".home.shangcheng.view.FirmOrderActivity" />
+        <activity android:name=".home.view.PayActivity" />
+        <activity android:name=".home.wode.view.PersonalInfoActivity" />
+        <activity android:name=".home.wode.view.MyOrderActivity" />
+        <activity android:name=".home.wode.view.OrderDetailsActivity" />
+        <activity android:name=".home.wode.view.EvaluateActivity" />
+        <activity android:name=".home.wode.view.MallOrderLogisticsActivity" />
+        <activity android:name=".home.wode.view.CurriculumOrderDetailsActivity" />
+        <activity android:name=".home.wode.view.MyCurriculumActivity" />
+        <activity android:name=".home.wode.view.MyCourseSheetActivity" />
+        <activity android:name=".home.wode.view.MyFollowActivity" />
+        <activity android:name=".home.wode.view.SettingActivity" />
+        <activity android:name=".home.wode.view.ModifyTelActivity" />
+        <activity android:name=".home.wode.view.ModifyTelActivity2" />
+        <activity android:name=".home.wode.view.SetPwdActivity" />
+        <activity android:name=".home.wode.view.MyErrorBookActivity" />
     </application>
 
 </manifest>

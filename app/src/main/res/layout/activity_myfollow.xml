@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/action_bar_bg50d8c0"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:gravity="center|start"
+        android:drawableLeft="@drawable/ic47"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:background="#F8F8F8"
+        android:text="再次点击可取消关注"
+        android:drawablePadding="8dp"
+        android:paddingLeft="14dp"
+        />
+    <include layout="@layout/smart_recyclerview"/>
+</LinearLayout>

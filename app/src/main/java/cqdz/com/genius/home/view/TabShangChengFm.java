@@ -2,13 +2,9 @@ package cqdz.com.genius.home.view;
 
 import android.content.Intent;
 import android.graphics.Rect;
-import android.hardware.input.InputManager;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.Editable;
 import android.text.TextUtils;
-import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.inputmethod.InputMethodManager;
@@ -17,6 +13,7 @@ import android.widget.ImageView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.orhanobut.logger.Logger;
+import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +21,9 @@ import java.util.List;
 import butterknife.BindView;
 import cqdz.com.genius.R;
 import cqdz.com.genius.home.shangcheng.adapter.ShoppingMenuAdapter;
-import cqdz.com.genius.home.shangcheng.model.ShoppingClassifyBean;
+import cqdz.com.genius.home.shangcheng.model.ShoppingClassifyModel;
+import cqdz.com.genius.home.shangcheng.view.CommodityDetailsActivity;
+import cqdz.com.genius.home.shangcheng.view.ShoppingTab;
 import cqdz.com.genius.mvpInterface.MvpBaseFragment;
 import cqdz.com.genius.mvpInterface.MvpPresenter;
 import me.majiajie.pagerbottomtabstrip.NavigationController;
@@ -41,12 +40,16 @@ public class TabShangChengFm extends MvpBaseFragment implements View.OnClickList
     PageNavigationView mTab;
     @BindView(R.id.rv_content)
     RecyclerView mRvContent;
+
+    @BindView(R.id.smartRefreshLayout)
+    SmartRefreshLayout smartRefreshLayout;
+
     InputMethodManager imm;
     private NavigationController mNavigationController;
 
-    List<ShoppingClassifyBean> mList;
+    List<ShoppingClassifyModel.Response.Data> mList;
 
-    List<ShoppingClassifyBean.ShoppingMenuBean> mShoppingMenuBeanList;
+    List<ShoppingClassifyModel.Response.Data.ShoppingMenuBean> mShoppingMenuBeanList;
     ShoppingMenuAdapter mAdapter;
 
     @Override
@@ -99,6 +102,7 @@ public class TabShangChengFm extends MvpBaseFragment implements View.OnClickList
         mAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
+                startActivity(new Intent(mContext,CommodityDetailsActivity.class));
             }
         });
         mRvContent.setLayoutManager(new GridLayoutManager(mContext, 2));
@@ -137,13 +141,15 @@ public class TabShangChengFm extends MvpBaseFragment implements View.OnClickList
     }
     public void setData()
     {
-        ShoppingClassifyBean data = new ShoppingClassifyBean();
+        ShoppingClassifyModel.Response.Data data = new ShoppingClassifyModel.Response.Data();
 
-        ShoppingClassifyBean.ShoppingMenuBean seconed = new ShoppingClassifyBean.ShoppingMenuBean();
-        seconed.setTypeName("子菜单一");
+        ShoppingClassifyModel.Response.Data.ShoppingMenuBean seconed = new ShoppingClassifyModel.Response.Data.ShoppingMenuBean();
+        seconed.setName("子菜单一");
         seconed.setImg("http://imgsrc.baidu.com/baike/pic/item/8759287aee6b8fb32f73b31b.jpg");
         seconed.setId("2");
-        List<ShoppingClassifyBean.ShoppingMenuBean> seconedList = new ArrayList<>();
+        seconed.setPrice("￥129");
+        seconed.setPurchased("已有51人购买");
+        List<ShoppingClassifyModel.Response.Data.ShoppingMenuBean> seconedList = new ArrayList<>();
         seconedList.add(seconed);
         seconedList.add(seconed);
         seconedList.add(seconed);

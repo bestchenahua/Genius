@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_bar_bg50d8c0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="更换手机号前请完成身份验证"
+        android:textColor="#333333"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请确认您的手机"
+            android:textColor="#333333"
+            android:layout_marginRight="5dp"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="15958796589"
+            android:textColor="#50d8c0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="能正常接收短信"
+            android:layout_marginLeft="5dp"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/ed_vercode"
+            android:padding="5dp"
+            android:layout_width="214dp"
+            android:layout_height="36dp"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:inputType="number"
+            android:hint="请输入验证码"
+            android:background="@drawable/rad5_dcdcdc"/>
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="94dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="7dp"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:text="发送验证码"
+            android:background="@drawable/rad5_50d8c0"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:text="完成验证"
+            android:background="@drawable/rad5_d2d2d2"/>
+    </LinearLayout>
+</LinearLayout>

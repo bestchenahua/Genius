@@ -1,1 +1,1 @@
-include ':app', ':banner', ':pickerview', ':wheelview', ':library'
+include ':app', ':banner', ':pickerview', ':wheelview', ':library', ':FlycoTabLayout_Lib'
