@@ -1,5 +1,6 @@
 package cqdz.com.genius.home.wode.view;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
@@ -62,7 +63,7 @@ public class MyErrorBookFragment extends MvpBaseFragment implements View.OnClick
         adapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
-                
+                startActivity(new Intent(mContext,ViewErrorSubjectActivity.class));
             }
         });
         recyclerView.setAdapter(adapter);//设置适配器

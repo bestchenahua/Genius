@@ -331,7 +331,7 @@
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="加入选课单"
-                android:foreground="?android:attr/selectableItemBackground"
+                android:foreground="?android:attr/actionBarItemBackground"
                 android:gravity="center"
                 android:background="@drawable/rad19_left_50d8c0"
                 android:textColor="#FFFFFF"
@@ -343,7 +343,7 @@
                 android:layout_height="match_parent"
                 android:text="立即报名"
                 android:gravity="center"
-                android:foreground="?android:attr/selectableItemBackground"
+                android:foreground="?android:attr/actionBarItemBackground"
                 android:background="@drawable/rad19_right_14a28a"
                 android:textColor="#FFFFFF"
                 android:textSize="15sp"/>
