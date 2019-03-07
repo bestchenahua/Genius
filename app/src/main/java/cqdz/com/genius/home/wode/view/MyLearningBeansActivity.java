@@ -1,7 +1,10 @@
 package cqdz.com.genius.home.wode.view;
 
+import android.content.Intent;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
 
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 
@@ -17,6 +20,8 @@ import cqdz.com.genius.mvpInterface.MvpPresenter;
 
 public class MyLearningBeansActivity extends MvpBaseActivity {
 
+    @BindView(R.id.btn_goRecharge)
+    Button btn_goRecharge;
     @BindView(R.id.smartRefreshLayout)
     SmartRefreshLayout smartRefresh;
     @BindView(R.id.recyclerView)
@@ -36,6 +41,12 @@ public class MyLearningBeansActivity extends MvpBaseActivity {
     @Override
     protected void initMonitorAndData() {
         action_bar_title.setText("学习豆");
+        btn_goRecharge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(mContext,MyLearningRechargeActivity.class));
+            }
+        });
         mList = new ArrayList<>();
         setList();
         adapter = new LeaningBeansAdapter(R.layout.item_learningbeans,mList);

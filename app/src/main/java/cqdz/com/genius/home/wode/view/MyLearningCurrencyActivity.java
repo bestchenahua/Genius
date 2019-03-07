@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Button;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
@@ -20,6 +21,8 @@ import cqdz.com.genius.mvpInterface.MvpPresenter;
 
 public class MyLearningCurrencyActivity extends MvpBaseActivity {
 
+    @BindView(R.id.btn_getCash)
+    Button btn_getCash;
     @BindView(R.id.smartRefreshLayout)
     SmartRefreshLayout smartRefresh;
     @BindView(R.id.recyclerView)
@@ -39,6 +42,12 @@ public class MyLearningCurrencyActivity extends MvpBaseActivity {
     @Override
     protected void initMonitorAndData() {
         action_bar_title.setText("学习币");
+        btn_getCash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(mContext,MyLearningCurrency3Activity.class));
+            }
+        });
         mList = new ArrayList<>();
         setList();
         adapter = new LeaningBeansAdapter(R.layout.item_learningcurrency,mList);

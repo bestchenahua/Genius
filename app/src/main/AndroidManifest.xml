@@ -61,6 +61,10 @@
         <activity android:name=".home.wode.view.MyCreditActivity" />
         <activity android:name=".home.wode.view.MyLotteryActivity" android:hardwareAccelerated="false"  />
         <activity android:name=".home.wode.view.MyCollectionActivity" />
+        <activity android:name=".home.wode.view.MyLearningRechargeActivity" />
+        <activity android:name=".home.wode.view.MyLearningCurrency3Activity" />
+        <activity android:name=".home.wode.view.MyShoppingCart" />
+        <activity android:name=".home.wode.view.ShoppingCartOrder" />
     </application>
 
 </manifest>

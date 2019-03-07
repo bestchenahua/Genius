@@ -305,6 +305,72 @@
                     android:layout_height="1dp"
                     android:background="#d2d2d2">
                 </View>
+
+                <LinearLayout
+                    android:id="@+id/ll_year2"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:gravity="center|start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="教龄"
+                        android:textColor="#80000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_year2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:hint="5年"
+                        android:drawablePadding="5dp"
+                        android:background="@null"
+                        android:gravity="center|end"
+                        android:textColor="#8E8E8E"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d2d2d2">
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/ll_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:gravity="center|start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="主播等级"
+                        android:textColor="#80000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_level"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:hint="至尊主播"
+                        android:drawablePadding="5dp"
+                        android:background="@null"
+                        android:gravity="center|end"
+                        android:textColor="#8E8E8E"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d2d2d2">
+                </View>
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
     </LinearLayout>

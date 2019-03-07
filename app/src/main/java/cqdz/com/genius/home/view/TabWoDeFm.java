@@ -17,6 +17,7 @@ import cqdz.com.genius.home.wode.view.MyLearningBeansActivity;
 import cqdz.com.genius.home.wode.view.MyLearningCurrencyActivity;
 import cqdz.com.genius.home.wode.view.MyLotteryActivity;
 import cqdz.com.genius.home.wode.view.MyOrderActivity;
+import cqdz.com.genius.home.wode.view.MyShoppingCart;
 import cqdz.com.genius.home.wode.view.PersonalInfoActivity;
 import cqdz.com.genius.home.wode.view.SettingActivity;
 import cqdz.com.genius.mvpInterface.MvpBaseFragment;
@@ -50,6 +51,8 @@ public class TabWoDeFm extends MvpBaseFragment implements View.OnClickListener {
     LinearLayout 我的奖券;
     @BindView(R.id.ll_collection)
     LinearLayout 我的收藏;
+    @BindView(R.id.ll_shopcart)
+    LinearLayout 我的购物车;
 
     @Override
     protected int getLayout() {
@@ -76,6 +79,7 @@ public class TabWoDeFm extends MvpBaseFragment implements View.OnClickListener {
         学分.setOnClickListener(this);
         我的奖券.setOnClickListener(this);
         我的收藏.setOnClickListener(this);
+        我的购物车.setOnClickListener(this);
     }
 
     @Override
@@ -125,6 +129,9 @@ public class TabWoDeFm extends MvpBaseFragment implements View.OnClickListener {
                 break;
             case R.id.ll_collection:
                 startActivity(new Intent(mContext, MyCollectionActivity.class));
+                break;
+            case R.id.ll_shopcart:
+                startActivity(new Intent(mContext, MyShoppingCart.class));
                 break;
         }
     }
