@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import butterknife.BindView;
@@ -18,7 +17,7 @@ import cqdz.com.genius.utils.SizeTransform;
 
 import static android.util.TypedValue.COMPLEX_UNIT_SP;
 
-public class ErrorSingleChoiceQuestionFm extends MvpBaseFragment {
+public class ErrorChoiceQuestionFm extends MvpBaseFragment {
     @BindView(R.id.tv_serial)
     TextView tv_serial;
 
@@ -28,9 +27,9 @@ public class ErrorSingleChoiceQuestionFm extends MvpBaseFragment {
     @BindView(R.id.radio)
     LinearLayout radioGroup;
     ErrorSubjectModel.Response.Data subject;
-    public static ErrorSingleChoiceQuestionFm getSingleChoiceQuestionFm(ErrorSubjectModel.Response.Data subject)
+    public static ErrorChoiceQuestionFm getSingleChoiceQuestionFm(ErrorSubjectModel.Response.Data subject)
     {
-        ErrorSingleChoiceQuestionFm singleChoiceQuestionFm= new ErrorSingleChoiceQuestionFm();
+        ErrorChoiceQuestionFm singleChoiceQuestionFm= new ErrorChoiceQuestionFm();
         singleChoiceQuestionFm.subject = subject;
         return  singleChoiceQuestionFm;
     }

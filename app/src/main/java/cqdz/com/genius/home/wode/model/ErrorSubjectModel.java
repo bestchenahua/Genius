@@ -57,6 +57,16 @@ public class ErrorSubjectModel {
             public static class Options
             {
                 String item;
+                String option;
+
+                public String getOption() {
+                    return option;
+                }
+
+                public void setOption(String option) {
+                    this.option = option;
+                }
+
                 int isRirht = 0;
 
                 public String getItem() {

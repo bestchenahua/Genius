@@ -95,11 +95,11 @@
         <TextView
             android:id="@+id/content"
             android:layout_width="152dp"
-            android:layout_height="29dp"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:ellipsize="end"
             android:gravity="center|start"
-            android:maxLines="2"
+            android:lines="2"
             android:text="二年级语文文言文阅读提升测试(三)二年级语文文言文阅读提升测试(三)二年级语文文言文阅读提升测试(三)二年级语文文言文阅读提升测试(三)"
             android:textColor="#333333"
             android:textSize="12sp"

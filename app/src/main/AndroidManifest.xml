@@ -54,6 +54,13 @@
         <activity android:name=".home.wode.view.SetPwdActivity" />
         <activity android:name=".home.wode.view.MyErrorBookActivity" />
         <activity android:name=".home.wode.view.ViewErrorSubjectActivity" />
+        <activity android:name=".home.wode.view.MyLearningBeansActivity" />
+        <activity android:name=".home.wode.view.MyLearningCurrencyActivity" />
+        <activity android:name=".home.wode.view.MyLearningCurrency2Activity" />
+        <activity android:name=".home.wode.view.MyLearningBeans2Activity" />
+        <activity android:name=".home.wode.view.MyCreditActivity" />
+        <activity android:name=".home.wode.view.MyLotteryActivity" android:hardwareAccelerated="false"  />
+        <activity android:name=".home.wode.view.MyCollectionActivity" />
     </application>
 
 </manifest>

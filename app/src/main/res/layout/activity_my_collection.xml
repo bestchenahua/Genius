@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#50d8c0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:onClick="goBack">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/ic11" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center">
+
+                <com.flyco.tablayout.SegmentTabLayout
+                    android:id="@+id/tl_1"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    tl:tl_bar_color="#50D8C0"
+                    tl:tl_indicator_color="#ffffff"
+                    tl:tl_indicator_corner_radius="16dp"
+                    tl:tl_tab_padding="20dp"
+                    tl:tl_textSelectColor="#50D8C0"
+                    tl:tl_textUnselectColor="#ffffff" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/action_bar_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</LinearLayout>

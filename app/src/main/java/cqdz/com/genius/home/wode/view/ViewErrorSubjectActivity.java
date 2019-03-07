@@ -61,16 +61,17 @@ public class ViewErrorSubjectActivity extends MvpBaseActivity implements View.On
 
         for (int j = 0; j < mList.size(); j++) {
 
-            if (mList.get(j).getType().equals("单选题")) {
-                fragments.add(ErrorSingleChoiceQuestionFm.getSingleChoiceQuestionFm(mList.get(j)));
+            if (mList.get(j).getType().equals("选择题")) {
+                fragments.add(ErrorChoiceQuestionFm.getSingleChoiceQuestionFm(mList.get(j)));
             }
 //            else if (mList.get(j).getType().equals("多选题")) {
 //                fragments.add(MultipleChoiceQuestionFm.getMultipleChoiceQuestionFm(mList.get(j)));
 //            } else if (mList.get(j).getType().equals("问答题")) {
 //                fragments.add(AnswersQuestionFm.getAnswersQuestionFm(mList.get(j)));
-//            } else if (mList.get(j).getType().equals("填空题")) {
-//                fragments.add(CompletionQuestionFm.getCompletionQuestionFm(mList.get(j)));
 //            }
+ else if (mList.get(j).getType().equals("填空题")) {
+                fragments.add(ErrorCompletionQuestionFm.getCompletionQuestionFm(mList.get(j)));
+            }
 
         }
 
@@ -93,7 +94,7 @@ public class ViewErrorSubjectActivity extends MvpBaseActivity implements View.On
         for (; i < 3; i++) {
             ErrorSubjectModel.Response.Data data = new ErrorSubjectModel.Response.Data();
             data.setSubject("这个果实看起来红红的，看起来好像很好吃，尝一个，( )甜滋滋的！（5分）");
-            data.setType("单选题");
+            data.setType("选择题");
             data.setSerial(i);
             List<ErrorSubjectModel.Response.Data.Options> options = new ArrayList<>();
             ErrorSubjectModel.Response.Data.Options item = new ErrorSubjectModel.Response.Data.Options();
@@ -136,17 +137,25 @@ public class ViewErrorSubjectActivity extends MvpBaseActivity implements View.On
 //            mList.add(data3);
 //        }
 //
-//        for (; i < 11; i++) {
-//            SubjectModel.Response.Data data4 = new SubjectModel.Response.Data();
-//            data4.setSubject("李白《早发白帝城》：朝辞白帝彩云间，______A____。 两岸猿声啼不住，，______B____。");
-//            data4.setType("填空题");
-//            data4.setSerial(i);
-//            List<String> options4 = new ArrayList<>();
-//            options4.add("A");
-//            options4.add("B");
-//            data4.setOptions(options4);
-//            mList.add(data4);
-//        }
+        for (; i < 11; i++) {
+            ErrorSubjectModel.Response.Data data4 = new ErrorSubjectModel.Response.Data();
+            data4.setSubject("李白《早发白帝城》：朝辞白帝彩云间，______A____。 两岸猿声啼不住，，______B____。");
+            data4.setType("填空题");
+            data4.setSerial(i);
+            ErrorSubjectModel.Response.Data.Options item = new ErrorSubjectModel.Response.Data.Options();
+            item.setItem("千里江陵一日还");
+            item.setIsRirht(0);
+            item.setOption("A");
+            ErrorSubjectModel.Response.Data.Options item2 = new ErrorSubjectModel.Response.Data.Options();
+            item2.setItem("轻舟已过万重山");
+            item2.setIsRirht(1);
+            item2.setOption("B");
+            List<ErrorSubjectModel.Response.Data.Options> options = new ArrayList<>();
+            options.add(item);
+            options.add(item2);
+            data4.setOptions(options);
+            mList.add(data4);
+        }
     }
 
     public void switchFragment() {
