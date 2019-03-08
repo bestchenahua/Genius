@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/action_bar_bg50d8c0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="72dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:src="@drawable/ic60"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#50D8C0"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:text="注册成功"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/rad19_50d8c0"
+                android:text="进入德兴天才"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

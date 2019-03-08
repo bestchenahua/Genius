@@ -108,6 +108,8 @@ public class CurriculumOrderFragment extends MvpBaseFragment implements View.OnC
         //设置布局管理器 , 将布局设置成纵向
         LinearLayoutManager linerLayoutManager = new LinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(linerLayoutManager);
+        adapter.setEmptyView(R.layout.empty,recyclerView);
+//        adapter.setEmptyView(R.layout.empty);
         smartRefresh.setOnRefreshListener(new OnRefreshListener() {
             @Override
             public void onRefresh(@NonNull RefreshLayout refreshLayout) {

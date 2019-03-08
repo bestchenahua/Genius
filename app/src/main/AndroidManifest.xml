@@ -65,6 +65,18 @@
         <activity android:name=".home.wode.view.MyLearningCurrency3Activity" />
         <activity android:name=".home.wode.view.MyShoppingCart" />
         <activity android:name=".home.wode.view.ShoppingCartOrder" />
+        <activity android:name=".guide.GuideActivity" />
+        <activity android:name=".login.view.LoginActivity" />
+        <activity android:name=".login.view.RegisterActivity" />
+        <activity android:name=".login.view.ForgetPwdActivity" />
+        <activity android:name=".login.view.ReadClauseActivity" />
+        <activity android:name=".login.view.RegisterResultActivity" />
+        <activity android:name=".login.view.GradeChooseActivity" />
+        <activity android:name=".login.view.FillDataActivity" />
+        <activity android:name=".home.view.TeacherFillInfoActivity" />
+        <activity android:name=".home.view.TeacherFillInfo2Activity" />
+        <activity android:name=".home.view.TeacherRegisterResultActivity" />
+        <activity android:name=".home.wode.view.MyTestPaperActivity" />
     </application>
 
 </manifest>

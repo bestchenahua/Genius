@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Handler;
 import com.orhanobut.logger.Logger;
 
+import cqdz.com.genius.guide.GuideActivity;
 import cqdz.com.genius.home.HomeActivity;
+import cqdz.com.genius.login.view.LoginActivity;
 import cqdz.com.genius.mvpInterface.MvpBaseActivity;
 import cqdz.com.genius.mvpInterface.MvpPresenter;
 import cqdz.com.genius.utils.SharedPreferenceUtil;
@@ -45,7 +47,7 @@ public class MainActivity extends MvpBaseActivity {
                     Logger.d("1");
 //            startActivity(new Intent(mContext, HandlerActivity.class));
 //                    startActivity(new Intent(mContext, LoginActivity.class));
-                    startActivity(new Intent(mContext, HomeActivity.class));
+                    startActivity(new Intent(mContext, LoginActivity.class));
                     finish();
                 }
             }
@@ -105,8 +107,8 @@ public class MainActivity extends MvpBaseActivity {
                 .subscribe(permission -> { // will emit 1 Permission object
                     if (permission.granted) {
                         // 所有权限都被同意
-//                        startActivity(new Intent(mContext, GuideActivity.class));
-                        startActivity(new Intent(mContext, HomeActivity.class));
+                        startActivity(new Intent(mContext, GuideActivity.class));
+//                        startActivity(new Intent(mContext, HomeActivity.class));
                         finish();
                         //保存是否第一次登陆
                         SharedPreferenceUtil.setBoolean(SP_ISFIRST,false);
@@ -114,8 +116,8 @@ public class MainActivity extends MvpBaseActivity {
                     else if (permission.shouldShowRequestPermissionRationale)
                     {
                         //有至少一个权限没有同意
-//                        startActivity(new Intent(mContext, GuideActivity.class));
-                        startActivity(new Intent(mContext, HomeActivity.class));
+                        startActivity(new Intent(mContext, GuideActivity.class));
+//                        startActivity(new Intent(mContext, HomeActivity.class));
                         finish();
 
                         //保存是否第一次登陆
@@ -123,8 +125,8 @@ public class MainActivity extends MvpBaseActivity {
                     }
                     else {
                         //有至少一个权限没有同意且勾选了不在提示
-//                        startActivity(new Intent(mContext, GuideActivity.class));
-                        startActivity(new Intent(mContext, HomeActivity.class));
+                        startActivity(new Intent(mContext, GuideActivity.class));
+//                        startActivity(new Intent(mContext, HomeActivity.class));
                         finish();
                         //保存是否第一次登陆
                         SharedPreferenceUtil.setBoolean(SP_ISFIRST,false);

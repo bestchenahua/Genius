@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_bar_bg50d8c0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic64"
+                android:drawablePadding="10dp"
+                android:text="昵称："
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ed_petName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center|start"
+                android:hint="请输入昵称"
+                android:inputType="text"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50D8C0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic62"
+                android:drawablePadding="10dp"
+                android:text="姓名："
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center|start"
+                android:hint="请输入你的真实名姓名"
+                android:inputType="text"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50D8C0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic61"
+                android:drawablePadding="10dp"
+                android:text="年龄："
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ed_age"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center|start"
+                android:hint="请输入你的年龄"
+                android:inputType="number"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50D8C0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic65"
+                android:drawablePadding="10dp"
+                android:text="家庭地址："
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ed_addr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center|start"
+                android:hint="请输入你的家庭住址"
+                android:inputType="text"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50D8C0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic63"
+                android:drawablePadding="10dp"
+                android:text="就读学校："
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ed_school"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center|start"
+                android:hint="请输入你的学校"
+                android:inputType="text"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50D8C0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/rad19_50d8c0"
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

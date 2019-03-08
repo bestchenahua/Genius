@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/action_bar_bg50d8c0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="德行天才"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="#50D8C0"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="《德兴天才使用条款与隐私政策》"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Deng.com灯网——一家专业卖灯的网站，由中山灯多看科技有限公司独家运营，是中国首家以“互联网+移动客户端+微营销+线下体验”的灯饰全网营销平台。
+
+灯多看科技作为中珠江唯一一家金牌淘拍档认证企业，成立于2004年，是华南地区领先的电子商务服务机构。公司拥有资深运营团队，公司集阿里巴巴、淘宝、京东、中国策划研究院等国内多家知名公司及机构出身的高端优秀人才，具备丰富的实战经验，成员从起初的8人，到现在的200多人，以技术为核心，以运营销售为导向，以市场为中心的中型互联网精锐团队。
+
+公司自成立以来，始终专注于以营销为核心的互联网电商运营，经过11年的成长，公司从一家淘宝C店发展到现在拥有涵盖数码、家居、食品、建材等几大行业的多家电子商务品牌直营店以及其他在线渠道的运营，年销售额超过5亿元。其中暴风数码店从2009 -2012年连续四年保持数码类产品信誉度、销售额和交易量第一的卖家，至今此记录还未被打破。我们始终坚持“助力更多的中国企业实现互联网梦，让互联网成为实现中国梦的重要一部分”的使命，已经成功为咀香园、厨邦、雪莱特、登梦、普宇、帆欣灯饰、欧悦、8thdays、KunXiang灯饰、优典照明等近上百家知名品牌提供互联网电商一站式服务，并在短时间内为这些客户获得了突破性效益增长，特别是Rock品牌，在暴风的服务下，不到一年时间销售业绩分别为1.5亿，成为了行业销量第一的品牌，到了客户以及消费者的一致认可。
+
+2015年，Deng.com在古镇建立了首个Deng.com旗舰广场，通过“网购平台”+“实体体验店”+“客服支持中心”三大系统结合，成功地解决了电子商务在灯饰行业的平台、物流、终端售后服务的三大短板，开启全新的O2O灯饰电商服务平台。2015年，我们将在全国率先复制100家Deng.com线下体验店，帮助用户线上掌握信息，线下获得实惠，帮助商家线上精准营销，线下汇聚客流，撬动更强势的市场消费。争取5年线下体验店达到1000家店，产值超过50个亿。
+
+公司还同时拥有Deng.net和zhaoming.com的域名，未来，我们将以Deng.com为引线，同步启动上线zhaoming.com，将其打造成为灯饰行业第一资讯类平台，致力于成为灯饰照明行业线上线下综合平台领军者，打造灯饰产品电商航空母舰！
+
+地址：广东省中山市古镇镇中兴大道121号Deng.com 电话：400-966-3336"
+        android:textSize="12sp"
+        android:editable="false"
+
+        android:textColor="#666666"
+        android:layout_marginLeft="12dp"
+        android:background="@null"
+        android:layout_marginRight="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:layout_marginTop="25dp"
+            android:text="2019德兴天才"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#50D8C0"/>
+</LinearLayout>

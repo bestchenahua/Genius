@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/action_bar_bg50d8c0" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:drawableLeft="@drawable/ic64"
+                            android:drawablePadding="10dp"
+                            android:text="昵称："
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_petName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="center|start"
+                            android:hint="请输入昵称"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#50D8C0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:drawableLeft="@drawable/ic62"
+                            android:drawablePadding="10dp"
+                            android:text="姓名："
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="center|start"
+                            android:hint="请输入你的真实名姓名"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#50D8C0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:drawableLeft="@drawable/ic61"
+                            android:drawablePadding="10dp"
+                            android:text="年龄："
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="center|start"
+                            android:hint="请输入你的年龄"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#50D8C0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:drawableLeft="@drawable/ic65"
+                            android:drawablePadding="10dp"
+                            android:text="家庭地址："
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_addr"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="center|start"
+                            android:hint="请输入你的家庭住址"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#50D8C0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_rzschool"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_rzschool"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:drawableLeft="@drawable/ic63"
+                            android:drawableRight="@drawable/ic1"
+                            android:drawablePadding="10dp"
+                            android:text="任职学校："
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#50D8C0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:drawableLeft="@drawable/ic66"
+                            android:drawablePadding="10dp"
+                            android:text="详细地址："
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_details_addr"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="center|start"
+                            android:hint="请输入详细地址"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#50D8C0" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:drawableLeft="@drawable/ic67"
+                            android:drawablePadding="10dp"
+                            android:text="教龄："
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_teach_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="center|start"
+                            android:hint="请输入你的教龄"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#50D8C0" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:drawableLeft="@drawable/ic68"
+                            android:drawablePadding="10dp"
+                            android:text="擅长科目："
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_beGood"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="center|start"
+                            android:hint="请输入你擅长的科目"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#50D8C0" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:drawableLeft="@drawable/ic69"
+                            android:drawablePadding="10dp"
+                            android:text="邮箱："
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="center|start"
+                            android:hint="请输入你的邮箱"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#50D8C0" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/rad19_50d8c0"
+            android:text="下一步"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </LinearLayout>
+</LinearLayout>

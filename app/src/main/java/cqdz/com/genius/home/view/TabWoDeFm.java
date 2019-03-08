@@ -3,6 +3,7 @@ package cqdz.com.genius.home.view;
 import android.content.Intent;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import butterknife.BindView;
 import cqdz.com.genius.R;
@@ -18,6 +19,7 @@ import cqdz.com.genius.home.wode.view.MyLearningCurrencyActivity;
 import cqdz.com.genius.home.wode.view.MyLotteryActivity;
 import cqdz.com.genius.home.wode.view.MyOrderActivity;
 import cqdz.com.genius.home.wode.view.MyShoppingCart;
+import cqdz.com.genius.home.wode.view.MyTestPaperActivity;
 import cqdz.com.genius.home.wode.view.PersonalInfoActivity;
 import cqdz.com.genius.home.wode.view.SettingActivity;
 import cqdz.com.genius.mvpInterface.MvpBaseFragment;
@@ -53,7 +55,11 @@ public class TabWoDeFm extends MvpBaseFragment implements View.OnClickListener {
     LinearLayout 我的收藏;
     @BindView(R.id.ll_shopcart)
     LinearLayout 我的购物车;
+    @BindView(R.id.ll_shijuanguanli)
+    LinearLayout 试卷管理;
 
+    @BindView(R.id.action_bar_right)
+    TextView action_bar_right;
     @Override
     protected int getLayout() {
         return R.layout.tab_wode_fm;
@@ -66,6 +72,7 @@ public class TabWoDeFm extends MvpBaseFragment implements View.OnClickListener {
 
     @Override
     protected void initMonitorAndData() {
+        action_bar_right.setText("申请成为老师");
         个人信息.setOnClickListener(this);
         我的订单.setOnClickListener(this);
         我的课程.setOnClickListener(this);
@@ -80,6 +87,8 @@ public class TabWoDeFm extends MvpBaseFragment implements View.OnClickListener {
         我的奖券.setOnClickListener(this);
         我的收藏.setOnClickListener(this);
         我的购物车.setOnClickListener(this);
+        试卷管理.setOnClickListener(this);
+        action_bar_right.setOnClickListener(this);
     }
 
     @Override
@@ -91,6 +100,9 @@ public class TabWoDeFm extends MvpBaseFragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.action_bar_right:
+                startActivity(new Intent(mContext, TeacherFillInfoActivity.class));
+                break;
             case R.id.linearLayout8:
                 startActivity(new Intent(mContext, PersonalInfoActivity.class));
                 break;
@@ -133,6 +145,11 @@ public class TabWoDeFm extends MvpBaseFragment implements View.OnClickListener {
             case R.id.ll_shopcart:
                 startActivity(new Intent(mContext, MyShoppingCart.class));
                 break;
+
+            case R.id.ll_shijuanguanli:
+                startActivity(new Intent(mContext, MyTestPaperActivity.class));
+                break;
+
         }
     }
 }
